@@ -1,0 +1,71 @@
+\documentclass[fontset=none]{beamer}
+\usetheme{Madrid}
+\useoutertheme{smoothbars}
+\def\mathfamilydefault{\rmdefault}
+
+\usepackage{ctex}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage[arrow,matrix]{xy}
+\usepackage{amsmath,amssymb,amscd,bm,bbm,amsthm,mathrsfs}
+\usepackage{amsmath,amscd}
+\usepackage{amsfonts,amssymb}
+\usepackage{xypic}
+\usepackage{indentfirst}
+\usepackage{diagbox}
+\usepackage{graphicx}
+
+\def\d{\textup{d}}
+
+\theoremstyle{plain}
+\newtheorem{thm}{定理}[section]
+\newtheorem{lem}{引理}[section]
+\newtheorem{prop}{命题}[section]
+\newtheorem{cor}{推论}[section]
+
+\theoremstyle{definition}
+\newtheorem{defn}{定义}[section]
+\newtheorem{exmp}{例子}[section]
+\newtheorem*{ack}{致谢}
+
+\theoremstyle{remark}
+\newtheorem{rem}{注释}[section]
+
+\renewcommand{\qedsymbol}{$\square$}
+\renewcommand{\baselinestretch}{1.5}
+
+\definecolor{uibblue}{HTML}{262686}
+\definecolor{uibgreen}{HTML}{006000}
+
+\title{\LaTeX 使用教学: PPT}
+\author{Castelu}
+\institute{浙江大学数学科学学院}
+\date{2022年1月25日}
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+	\section{第一章}
+	\begin{frame}{第一节}
+		\begin{thm}[名称]
+			定理.
+		\end{thm}
+		\pause
+		\setbeamercolor{block title}{fg=white, bg=uibgreen}
+		
+		\begin{proof}
+			\hspace{2em}证明.
+		\end{proof}
+		\pause
+		\setbeamercolor{block title}{fg=white, bg=uibblue}
+		
+		\begin{block}{自定义}
+			\hspace{2em}本文讲解运用  \LaTeX 撰写PPT的方法.
+		\end{block}
+			
+	\end{frame}
+	
+\end{document}

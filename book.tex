@@ -1,0 +1,66 @@
+\documentclass[11pt, twoside, UTF8]{book}
+\usepackage{ctex}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage[arrow,matrix]{xy}
+\usepackage{amsmath,amssymb,amscd,bm,bbm,amsthm,mathrsfs}
+\usepackage{amsmath,amscd}
+\usepackage{amsfonts,amssymb}
+\usepackage{xypic}
+\usepackage{indentfirst}
+\usepackage{diagbox}
+\usepackage{graphicx}
+
+\def\d{\textup{d}}
+
+\theoremstyle{plain}
+\newtheorem{thm}{定理}[section]
+\newtheorem{lem}{引理}[section]
+\newtheorem{prop}{命题}[section]
+\newtheorem{cor}{推论}[section]
+
+\theoremstyle{definition}
+\newtheorem{defn}{定义}[section]
+\newtheorem{exmp}{例子}[section]
+\newtheorem*{ack}{致谢}
+
+\theoremstyle{remark}
+\newtheorem{rem}{注释}[section]
+
+\renewcommand{\qedsymbol}{$\square$}
+\renewcommand{\baselinestretch}{1.5}
+
+\cleardoublepage
+
+\title{\LaTeX 使用教学: 书籍}
+\author{Castelu}
+\date{2022年1月25日}
+
+\begin{document}
+	\frontmatter
+	\maketitle
+	
+	\addcontentsline{toc}{chapter}{前言}
+	\chapter*{第一版前言}
+	
+	本节讲解运用 \LaTeX 撰写书籍的方法.
+	
+	\begin{flushright}
+		\shortstack{
+			作者: Castelu \\
+			\vspace{0.2cm} \\
+			2022年2月1日}
+	\end{flushright}
+	\tableofcontents
+	\mainmatter
+	
+	\chapter{第一章}
+	
+	\section{第一节}
+	
+	\section{第二节}
+	
+	\section{第三节}
+	
+\end{document}

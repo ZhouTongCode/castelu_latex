@@ -1,0 +1,281 @@
+\documentclass[a4paper, 11pt, UTF8]{article}
+\usepackage{ctex}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage[arrow,matrix]{xy}
+\usepackage{amsmath,amssymb,amscd,bm,bbm,amsthm,mathrsfs}
+\usepackage{amsmath,amscd}
+\usepackage{amsfonts,amssymb}
+\usepackage{xypic}
+\usepackage{indentfirst}
+\usepackage{diagbox}
+\usepackage{graphicx}
+
+\def\d{\textup{d}}
+
+\theoremstyle{plain}
+\newtheorem{thm}{定理}[section]
+\newtheorem{lem}{引理}[section]
+\newtheorem{prop}{命题}[section]
+\newtheorem{cor}{推论}[section]
+
+\theoremstyle{definition}
+\newtheorem{defn}{定义}[section]
+\newtheorem{exmp}{例子}[section]
+\newtheorem*{ack}{致谢}
+
+\theoremstyle{remark}
+\newtheorem{rem}{注释}[section]
+
+\renewcommand{\qedsymbol}{$\square$}
+\renewcommand{\baselinestretch}{1.25}
+
+\title{\LaTeX 使用教学: 论文}
+\author{Castelu}
+\date{2022年1月25日}
+
+\begin{document}
+	\maketitle
+	\begin{abstract}
+		本节讲解运用\LaTeX 撰写论文的方法
+	\end{abstract}
+
+	\setcounter{section}{-1}
+	
+	
+	\section{引言}
+	
+	\begin{enumerate}
+		\item 行内公式: $x+y+z=1$
+		
+		\item 行间公式
+		$$x+y+z=1$$
+		
+		\item 美元号, 反斜杠和大括号等是\LaTeX 的内置符号.		
+	\end{enumerate}
+	
+	\section{数学符号}
+	
+	\begin{enumerate}
+		\item 加, 减, 乘, 除, 点乘, 加减, 减加, 等于与约等于:
+		$$+,-,\times,\div,\dot,\pm,\mp,=,\approx.$$
+		
+		\item 小于等于, 大于等于, 远小于, 远大于, 不等于与恒等于:
+		$$\le,\ge,\ll,\gg,\ne,\equiv.$$
+		
+		\item 下标, 上标与上下标: $ x_2,x^2,C_n^m,a_{ij},f^{(n)} $.
+		
+		\item 分数: $ \frac{b}{a} $, 行间公式自动放大
+		$$\frac{b}{a}.$$
+		
+		\item 行内公式手动放大: $ \displaystyle\frac{b}{a} $.
+		
+		\item 分数自带否决放大效果, 不论行内还是行间, 都需要手动放大.
+		$$\frac{c}{\frac{a}{b}}, \frac{c}{\displaystyle\frac{a}{b}}$$
+		
+		\item 根号: $ \sqrt{a},\sqrt[n]{a} $
+		
+		\item 极限, 连加, 连乘, 直和与向量积:
+		$$\lim\limits_{x \rightarrow 0} x, \sum\limits_{i=1}^n a_i, \prod\limits_{i=1}^{n} b_i, \bigoplus\limits_{i=1}^n V_i, \bigotimes\limits_{i=1}^n W_i.$$
+		
+		\item 自定义正上下标与多重下标:
+		$$\mathop{\times}\limits_{i=1}^n c_i,\lim\limits_{\substack{x\rightarrow 0 \\ y \rightarrow 0}} xy.$$
+		
+		\item 属于, 包含, 交, 并与空集: $ \in, \subset, \subseteq, \supset, \supseteq, \cap, \cup, \emptyset, \varnothing $.
+		
+		\item 属于, 包含, 交, 并与空集: $ \in, \subset, \subseteq, 
+		\supset, \supseteq, \cap, \cup, \emptyset, \varnothing $.
+		
+		\item 符号的否定: $ \not\in, \not\subset $.
+		
+		\item 整除号及其否定: $ \mid, \not\mid, \nmid $
+		
+		\item  空心符号: $ \mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{P} $
+		
+		\item 花写符号: $ \mathcal{A}, \mathcal{I}, \mathfrak{g} $.
+		
+		\item 全称量词与存在量词: $ \forall, \exists $.
+		
+		\item 小写希腊字母: $ \alpha, \beta, \gamma, \delta, \epsilon, \varepsilon, \eta, \theta, \lambda, \mu, \pi, \rho, \sigma, \tau, \phi, \varphi, \psi, \omega, \xi, \zeta $
+		
+		\item 大写希腊字母: $\Gamma, \Delta, \Pi, \Sigma, \Phi, \Psi, \Omega$.
+		
+		\item 无穷大与阿列夫: $ \infty, \aleph $.
+		
+		\item 三角函数与对数函数: $ \sin, \cos, \tan, \cot, \log, \lg, \ln $.
+		
+		\item 微分, 积分, 偏微分, 重积分与曲线积分:
+		\[ \d x, \int_a^b f(x)\d x, \frac{\partial y}{\partial x}, \iint_D f(x, y) \d x\d y, \oint_D P\d x+Q\d y. \]
+		
+		\item 上划线, 上波浪线, 上尖号与向量: $ \overline{AB}, \widetilde{AB}, \widehat{AB}, \overrightarrow{AB} $
+		
+		\item 反斜杠与大括号: $ \backslash, \left\{a\right\} $.
+		
+		\item 括号, 自适应括号与单侧括号:
+		\[ (a), [a], \left(\frac{1}{2}, 1\right), \left(\frac{1}{2}\right], \left.\frac{1}{2}\right], \left(\frac{1}{2}\right. \]
+		
+		\item 线性方程组
+		\[ \left\{\begin{array}{l}
+			x+y=1, \\
+			x-y=1. \\
+		\end{array}\right. \]
+	
+		\item 矩阵
+		\[ A=\left( \begin{array}{*{20}{c}}
+		a_{11}	& a_{12} & \cdots & a_{1n} \\
+		a_{21}	& a_{22} & \cdots & a_{2n} \\
+		\vdots	& \vdots &  & \vdots \\
+		a_{n1}	& a_{n2} & \cdots & a_{nn} 
+		\end{array} \right).\]
+		
+		\item 逻辑联结词: $ \wedge, \vee $.
+		
+		\item 相抵, 合同, 相似与同构: $ \sim, \cong $.
+		
+		\item 梯度: $ \nabla $.
+		
+		\item 箭头
+		\[ \rightarrow, \Rightarrow, \rightrightarrows, \Leftrightarrow, \iff, \mapsto, \hookrightarrow. \]
+		
+		\item 几何
+		\[ \circ, \triangle,m \odot, \bot, \parallel. \]		
+	\end{enumerate}
+
+	\section{排版符号}
+	
+	\begin{enumerate}
+		\item 映射:
+		\[ \begin{array}{*{20}{c}}
+			f: & A \rightarrow B \\
+			& a \mapsto f(a)
+		\end{array} \]
+	
+		\item  换行对齐:
+		\begin{displaymath}
+			\begin{array}{lll}
+				a&=&a+a+a+a+a+a+a+a+a\\
+				&=&a+a+a+a+a+a+a+a+a.\\
+			\end{array}	
+		\end{displaymath}
+		
+		\begin{displaymath}
+			\begin{array}{lll}
+				&&a+a+a+a+a+a+a+a+a\\
+				&=&a+a+a+a+a+a+a+a+a.\\
+			\end{array}	
+		\end{displaymath}
+	
+		\begin{displaymath}
+			\begin{array}{lll}
+				a&=&a+a+a+a+a+a+a+a+a\\
+				&&+b+b+b+b+b+b+b+b+b.\\
+			\end{array}	
+		\end{displaymath}
+	
+		\begin{displaymath}
+			\begin{array}{lll}
+				a&=&a+a+\left(b+b+b+b+b+b+b\right. \\
+				&&+\left.b+b\right)+a+a+a+a+a+a+a.\\
+			\end{array}	
+		\end{displaymath}
+	
+		\item 换行对其自带否决放大效果, 如需手动放大, 必要时调整行间距
+		\renewcommand*{\arraystretch}{1.5}
+		\begin{displaymath}
+			\begin{array}{lll}
+				\displaystyle\frac{b}{a}&=&\displaystyle\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}\\
+				&=&\displaystyle\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}+\frac{b}{a}\\
+			\end{array}
+		\end{displaymath}
+		\renewcommand*{\arraystretch}{1}
+		
+		\item 公式中插入文字:
+		\[ \text{勾股定理: } a^2+b^2=c^2. \]
+		
+		\item 交换图: 
+		\[ \xymatrix{
+		A_1 \ar[d]_{h_1} \ar[r]^{f_1} & \ar[d]_{h_2} B_1 \ar[r]^{g_1} & C_1 \ar[d]_{h_3} \\
+		A_2 \ar[r]^{f_2} & B_2 \ar[r]^{g_2} & C_2} \]
+		
+		\item 项目编号:
+		
+		\begin{enumerate}
+			\item 第一;
+			\item 第二;
+			\item 第三.
+		\end{enumerate}
+	
+		\begin{enumerate}
+			\item[(1)] 首先;
+			\item[(2)] 其次;
+			\item[(3)] 最后.
+		\end{enumerate}
+	
+		\item 表格:
+		\begin{center}
+			\begin{tabular}{*{3}{|m{3cm}<{\centering}}|}
+				\hline
+				\textbf{第1列}	& \textbf{第2列} & \textbf{第3列} \\
+				\hline
+				&  &  \\
+				\hline
+			\end{tabular}
+		\end{center}
+	
+		\item 插图:
+			\begin{center}
+			 	\includegraphics[scale=0.1]{1.png}	
+			\end{center}	
+	\end{enumerate}
+
+	\section{定理环境}
+	
+	\begin{lem}
+		引理.
+	\end{lem}
+
+	\begin{thm}
+		定理.
+	\end{thm}
+
+	\begin{prop}
+		命题.
+	\end{prop}
+
+	\begin{cor}
+		推论.
+	\end{cor}
+
+	\begin{defn}
+		定义.
+	\end{defn}
+
+	\begin{exmp}
+		例子.
+	\end{exmp}
+
+	\begin{proof}
+		证明.
+	\end{proof}
+
+	\begin{lem}[名称]
+		带有名称的引理.
+	\end{lem}
+
+	使用标签, 生成两次后生效:
+	\begin{defn}\label{D3.2}
+		带有标签的定义.
+	\end{defn}
+
+	\begin{ack}
+		感谢大家观看.
+	\end{ack}
+
+	\bibliographystyle{elsarticle-num-names}
+	
+	\begin{thebibliography}{60}
+		\bibitem{1} 作者, \emph{题目}, 期刊, \textbf{卷号}(年份), 页码.
+	\end{thebibliography}
+	
+\end{document}
