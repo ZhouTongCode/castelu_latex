@@ -6,5 +6,5 @@
 
 github地址: [ZhouTongCode/castelu_latex (github.com)](https://github.com/ZhouTongCode/castelu_latex)
 
-gitee地址: 
+gitee地址: [周彤/castelu_latex (gitee.com)](https://gitee.com/ZhouTongCode/castelu_latex)
 
