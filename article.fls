@@ -1,4 +1,4 @@
-PWD E:/course_master/研一下/科技论文排版技术_庞冬青/castelu
+PWD E:/course_master/研一下/科技论文排版技术_庞冬青/B站LaTeX学习/castelu_latex
 INPUT d:/my_software/texlive/2021/texmf.cnf
 INPUT d:/my_software/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT d:/my_software/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt
@@ -554,6 +554,17 @@ INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT d:/my_software/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
 INPUT ./article.aux
 INPUT article.aux
 INPUT article.aux
